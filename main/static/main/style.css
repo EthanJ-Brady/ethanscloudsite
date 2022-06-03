@@ -1,0 +1,76 @@
+body {
+  background-color: #121212;
+  color: white;
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+.section {
+  padding-left: max(1.25rem, 5vw);
+  padding-right: max(1.25rem, 5vw);
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.post-section {
+  text-align: center;
+}
+.post-section .post-track {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  justify-content: space-between;
+}
+@media (min-width: 768px) {
+  .post-section .post-track .post {
+    flex-grow: 1;
+    width: 1px;
+  }
+}
+.post-section .post-track .post > * {
+  margin-bottom: 1rem;
+}
+
+.post-section > * {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+#header {
+  display: grid;
+  grid-template-columns: 1fr 64px 1fr;
+  grid-gap: 1.25rem;
+  align-items: center;
+}
+#header #navigation-menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem 1rem;
+}
+
+#splash {
+  display: flex;
+  align-items: center;
+  height: 400px;
+  background-image: url("/static/main/images/Network-Background.png");
+  background-position: right;
+  background-size: auto 400px;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #splash #splash-content {
+    text-align: start;
+    max-width: 50%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

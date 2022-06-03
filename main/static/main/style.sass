@@ -1,0 +1,71 @@
+$desktop-width: 768px
+$default-spacing: 1.25rem
+$background-color: #121212
+$text-color: white
+$splash-height: 400px
+    
+body
+    background-color: $background-color
+    color: $text-color
+    font-size: 18px
+
+h1
+    font-size: 4rem
+
+img 
+    max-width: 100%
+
+.section 
+    padding-left: max($default-spacing, 5vw)
+    padding-right: max($default-spacing, 5vw)
+    padding-top: $default-spacing
+    padding-bottom: $default-spacing
+
+.post-section
+    text-align: center
+
+    .post-track
+        display: flex
+        flex-wrap: wrap
+        gap: $default-spacing
+        justify-content: space-between
+
+        .post
+            @media (min-width: $desktop-width)
+                flex-grow: 1
+                width: 1px
+
+        .post > *
+            margin-bottom: 1rem
+
+.post-section > *
+    margin-top: $default-spacing
+    margin-bottom: $default-spacing
+
+#header
+    display: grid
+    grid-template-columns: 1fr 64px 1fr
+    grid-gap: $default-spacing
+    align-items: center
+
+    #navigation-menu
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        gap: 1rem 1rem
+
+#splash
+    display: flex
+    align-items: center
+    height: $splash-height
+    background-image: url("/static/main/images/Network-Background.png")
+    background-position: right
+    background-size: auto $splash-height
+    background-repeat: no-repeat
+    text-align: center
+
+    #splash-content
+        @media (min-width: $desktop-width)
+            text-align: start
+            max-width: 50%
+        
